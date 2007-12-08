@@ -1,0 +1,297 @@
+/*Copyright www.riat.co */
+body {
+	margin: 0 auto;
+}
+#description {
+	display:none;
+}
+#head {
+	height:150px;
+	text-align:right;
+}
+div.logo {
+	background-image:url('images/logo.png');
+	background-position:center bottom;
+	background-repeat:no-repeat;
+}
+div.hidden {
+	display: none;
+}
+#options, #submitted {
+	position:absolute;
+	top:66px;
+	bottom:0px;
+	width:210px;
+	padding:3px;
+	overflow:auto;
+	font:normal 12px tahoma;
+	color:#666;
+}
+#options {
+	left:0px;
+	border-right:#aaa dotted 1px;
+	text-align:right;
+	line-height:18px;
+}
+#options select, #refer_name, #refer_email {
+	border:#aaa dotted 1px;
+	font:normal 12px tahoma;
+	color:#666;
+	width:150px;
+}
+#options div.head {
+	padding:12px 0px 0px 0px;
+	letter-spacing:3px;
+}
+#options div#head_word_type {
+	padding:0px;
+}
+#options div#head_button {
+	padding:12px 0px 0px 0px;
+}
+#options input {
+	vertical-align:bottom;
+}
+#refer_name, #refer_email {
+	text-align:right;
+}
+#refer_form, #game_form {
+	border:#ceadad dotted 1px;
+	padding:3px;
+}
+#refer_submit, #game_button {
+	background-color:#ddd;
+	width:63px;
+	font:normal 11px tahoma;
+	cursor:pointer;
+}
+#refer_submit:hover, #game_button:hover {
+	color:#ffffff;
+	background-color:#600;
+}
+#links {
+	font-size:11px;
+	padding-top:24px;
+}
+a {
+	color:#666;
+	text-decoration:none;
+}
+a:hover {
+	color:#333;
+	cursor:pointer;
+	text-decoration:underline;
+}
+a img {
+	border: 0;
+}
+div.explaination {
+	font:normal 11px tahoma;
+}
+#submitted {
+	right:0px;
+	border-left:#aaa dotted 1px;
+}
+#submitted .incorrect {
+	color: #d00;
+}
+#clear_div {
+	text-align:right;
+	display: none;
+}
+p {
+	text-align:center;
+	padding-top:10px;
+}
+#layer {
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	background-color:#fff;
+	opacity:0.5;
+	z-index:105;
+}
+#hint {
+	position:absolute;
+	top:150px;
+	left:224px;
+	font:normal 12px tahoma;
+	color:#666;
+}
+#hint_text {
+	display:none;
+	padding-top:9px;
+}
+#noscript {
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	width:100%;
+	text-align:center;
+	padding-top:300px;
+	opacity:0.45;
+	font:bold 24px verdana;
+}
+#copyright {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 12px;
+	bottom: 0px;
+	font:normal 11px tahoma;
+}
+
+
+/* scramble 2.0 */
+#word {
+	margin: 0 auto;
+	margin-left: 50%;
+	border-left: red solid 1px;
+}
+#word div {
+	position:absolute;
+	top: 50%;
+	margin-top: -30px;
+/* 	background: #600 url(images/bg.png) repeat-x 0 0; */
+	background: #600;
+	font: normal 48px georgia;
+	text-align: center;
+	cursor: pointer;
+	color: #fff;
+	height: 60px;
+	width: 60px;
+	z-index: 1;
+	border: 0;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+#word div.sticky {
+	z-index: 100;
+	background-color: #900;
+}
+#word div.solved {
+	cursor: default;
+	background-color: #999;
+}
+#word.incorrect div {
+	background-color: #f00;
+}
+#word.correct div {
+	background-color: #0a0;
+}
+#buttons {
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: 80px;
+	margin-left: -100px;
+	width: 200px;
+	text-align:center;
+}
+button {
+	background-color:#fff;
+	border:#aaa solid 1px;
+	text-decoration:none;
+	font:normal 12px tahoma;
+	color:#444477;
+	margin: 0 3px;
+}
+button:hover {
+	text-decoration:none;
+	background-color:#600;
+	color:white;
+	cursor:pointer;
+}
+button.disabled {
+	background-color:#aaa;
+	border:#aaa solid 1px;
+	color:#888;
+	cursor: default;
+}
+#status {
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	width: 100%;
+	font:normal 15px tahoma;
+	text-align:center;
+	color:#600;
+}
+#hint {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -120px;
+}
+#hint div#hint_icon {
+	height: 16px;
+	width: 16px;
+	background: #333 url(images/hint.png) no-repeat 0 0;
+}
+#hint.hintavailable div#hint_icon {
+	background-position: 0 -16px;
+}
+#hint div#hint_text {
+	display: none;
+	font-style: italic;
+	cursor: default;
+}
+#hint.hintavailable div#hint_text {
+	font-style: normal;
+}
+#hint:hover div#hint_text {
+	display: block;
+}
+#timer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -120px;
+	margin-left: 150px;
+	height: 30px;
+	width: 66px;
+	font: normal 24px impact;
+	color: #666;
+}
+#timer.expired {
+	color:#f00;
+}
+#timer.disabled {
+	color:#ccc;	
+}
+#undoredo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -120px;
+	margin-left: -22px;
+	text-align: center;
+	width: 43px;
+	height: 20px;
+}
+#undoredo div {
+	float: left;
+	height: 20px;
+	width: 20px;
+	background-image: url(images/undo.png);
+	background-repeat: no-repeat;
+}
+#redobutton {
+	margin-left: 3px;
+	background-position: 0px -20px;
+}
+#undoredo div.enabled:hover {
+	cursor: pointer;
+}
+#undoredo div#undobutton.enabled:hover {
+	background-position: -20px 0px;
+}
+#undoredo div#redobutton.enabled:hover {
+	background-position: -20px -20px;
+}
+#undoredo div.disabled {
+	background: none;
+}
