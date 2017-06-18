@@ -53,7 +53,7 @@ var DHTML = {
 	}
 }
 var Game = {
-	SERVER_URL: '?ajax=1',
+	SERVER_URL: 'words.xml?',
 	LETTER_WIDTH: 60,//has to be same as in CSS
 	LETTER_SPACING: 3,
 	LETTER_OVERDRAG: 15,
